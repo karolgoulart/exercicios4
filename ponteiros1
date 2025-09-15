@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    int *p;
+    
+    printf("Digite um número: ");
+    scanf("%d", &a);
+    printf("Digite um número: ");
+    scanf("%d", &b);
+
+    printf("Número 1= %d\nNúmero 2= %d\n", a, b);
+
+    if (a > b) {
+        p = &a;
+    } 
+    else {
+        p = &b;
+    }
+
+    *p = *p - 50;
+
+
+    printf("Valores finais:\nNúmero 1 = %d \nNúmero 2 = %d\n", a, b);
+
+    return 0;
